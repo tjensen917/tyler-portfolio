@@ -1,0 +1,335 @@
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    background: black;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: cyan;
+}
+
+/* General Settings */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 5vw;
+    position: relative;
+}
+.hero h1 {
+    font-size: 3rem;
+}
+.hero,
+#about,
+#projects,
+#skills, 
+#experience,
+#contact {
+  position: relative;
+}
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%;
+    box-sizing: border-box;
+}
+.btn {
+    background: cyan;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: white;
+}
+section {
+    width: 100%;
+    padding: 60px 5vw;
+    box-sizing: border-box;
+    text-align: center;
+}
+/* Hero background image
+#home {
+    height: 100vh;
+    background: url('images/hero-bg.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+} */
+
+
+/* About Section */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.about-content p {
+    flex: 1 1 400px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+.profile-pic {
+    flex: 1 1 400px;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Projects Section */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+}
+.project-card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+.project-card h3 {
+    color: cyan;
+    margin-bottom: 10px;
+}
+.project-card p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+.project-card .view-code-link {
+    color: cyan;
+    text-decoration: none;
+    font-weight: bold;
+}
+.project-card .view-code-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+.view-code-link:hover {
+    color: white; /* or dark cyan if you want less contrast */
+    text-decoration: underline;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.skill {
+    background: cyan;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Experience Section */
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+}
+.experience-card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+.experience-card h3 {
+    color: cyan;
+    margin-bottom: 10px;
+}
+.experience-card p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+.experience-card .view-code-link {
+    color: cyan;
+    text-decoration: none;
+    font-weight: bold;
+}
+.experience-card .view-code-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+.experience-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+/* Contact */
+#contact-form input, #contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+#contact-form button {
+width: 80%;
+    max-width: 300px; /* optional: limit button width */
+    background: cyan;
+    color: black;
+    border: none;
+    padding: 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content p {
+        padding: 0 10px;
+    }
+
+    .profile-pic {
+        max-width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Scroll Indicators */
+.scroll-indicator {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .scroll-indicator span {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(-45deg);
+    margin: 4px 0;
+    opacity: 0;
+    animation: fadeDown 2s infinite;
+  }
+  
+  .scroll-indicator span:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .scroll-indicator span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .scroll-indicator span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes fadeDown {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  footer {
+    padding-top: 10%;
+  }
+  .view-code-link {
+    color: cyan;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    text-decoration: underline;
+}
+
