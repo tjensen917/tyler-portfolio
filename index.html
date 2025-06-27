@@ -179,12 +179,18 @@
     
     <section id="contact">
         <h2>Contact Me</h2>
-        <form id="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+        <form action="https://formsubmit.co/tjensen917@outlook.com" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+
+  <!-- Optional hidden settings -->
+  <input type="hidden" name="_subject" value="New portfolio message!">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://yourportfolio.com/thank-you.html">
+</form>
+
     </section>
 
     
